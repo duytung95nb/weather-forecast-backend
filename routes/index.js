@@ -13,4 +13,9 @@ router.post('/', function(req, res, next) {
     });
 });
 
+// This is for getting data from blocked CORS
+router.get('/', function(req, res, next) {
+  res.send('test get request');
+});
+
 module.exports = router;
